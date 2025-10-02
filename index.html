@@ -4,46 +4,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JVinicius Noetzold</title>
-    <meta name="description" content="Escreva aqui uma descrição sobre o site">
+    <title>Vinícius de Almeida Noetzold - Portfólio</title>
+    <meta name="description" content="Currículo e Portfólio de Vinícius de Almeida Noetzold, Desenvolvedor Front-end.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <span class="rightLargeBar"></span>
-    <div class="topBar"></div>
-    <main class="wellcome">
-        <img src="pictures/foto.jpg" alt="" class="foto">
-        <div class="profile-info">
-            <h2 id="name">Vinícius de Almeida Noetzold</h2>
-            <h3 id="job">Front-end developer</h3>
-            <h3 id="fone"><a href="tel:5554997030349">WhatsApp</a></h3>
-            <h3 id="mail"><a href="mailto:noetzoldvini@outlook.com">noetzoldvini@outlook.com</a></h3>
-            <h3 id="city">Sarandi - RS</h3>
+    <div class="top-bar"></div>
+
+    <div class="main-container">
+
+        <div class="left-column">
+
+            <main class="profile-card">
+                <img src="pictures/foto.jpg" alt="Foto de Vinícius Noetzold" class="profile-picture">
+                <div class="profile-info">
+                    <h2 id="name">Vinícius de Almeida Noetzold</h2>
+                    <div class="contact-details">
+                        <p><strong>Idade:</strong> <span id="age-display">Calculando...</span></p>
+                        <p><strong>E-mail:</strong> <a href="mailto:noetzoldvini@outlook.com">noetzoldvini@outlook.com</a></p>
+                        <p><strong>Celular:</strong> <a href="tel:5554997030349">(54) 99703-0349</a></p>
+                        <p><strong>Endereço:</strong> Rua João Tesser, 890 - Sarandi, RS</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vin%C3%ADcius-noetzold-02bb12363/" class="btn-linkedin" target="_blank">
+                        Linkedin
+                    </a>
+                    <a href="https://github.com/ViniciusNoetzold" class="btn-github" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+            </main>
+
+            <div class="counter-box">
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <span id="count-years">0</span>
+                        <label>A</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="count-months">0</span>
+                        <label>M</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="count-days">0</span>
+                        <label>D</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="count-hours">00</span>
+                        <label>H</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="count-minutes">00</span>
+                        <label>M</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="count-seconds">00</span>
+                        <label>S</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-box">
+                <h3>Progresso na Graduação</h3>
+                <div class="progress-container">
+                    <div class="progress-bar-container">
+                        <span class="label-end">Fim</span>
+                        <div id="course-progress-bar" class="progress-bar">
+                            <div class="progress-arrow"></div>
+                        </div>
+                        <span class="label-start">Início</span>
+                    </div>
+                    <div id="progress-percentage" class="progress-percentage"></div>
+                </div>
+            </div>
         </div>
 
-        <br>
-        <br>
-        <a href="https://www.linkedin.com/in/vin%C3%ADcius-noetzold-02bb12363/" class="btnLink" target="_blank">
-            Linkedin </a>
-        <br>
-        <br>
-        <a href="https://github.com/ViniciusNoetzold" class="btnGit" target="_blank"> GitHub </a>
-        <br>
+        <aside class="right-column">
+            <div class="info-box">
+                <h2>Objetivo Profissional</h2>
+                <p>
+                    Busco uma oportunidade como Desenvolvedor Front-end Júnior/Estágio, onde eu possa aplicar meus
+                    conhecimentos em HTML, CSS e JavaScript para criar interfaces interativas e contribuir para projetos
+                    inovadores, ou como programador Java/Python, visando o crescimento contínuo na área de
+                    desenvolvimento web.
+                </p>
+            </div>
 
+            <div class="info-box">
+                <h2>Experiência Profissional</h2>
+                <div class="experience-item">
+                    <h4>Assistente Administrativo e Financeiro</h4>
+                    <p class="sub-details">Refrigeração Necon | Sarandi, RS | 2020 - Atual</p>
+                    <ul>
+                        <li>Gerenciamento de estoque (compra e venda).</li>
+                        <li>Lançamento de notas no sistema.</li>
+                        <li>Organização dos serviços prestados.</li>
+                    </ul>
+                </div>
+            </div>
 
-    </main>
-    <main class="contadorPosition">
-        <span id="contador"></span>
-    </main>
-    <main class="aboutMe"></main>
+            <div class="info-box">
+                <h2>Projetos Pessoais</h2>
+                <div class="experience-item">
+                    <h4>Sistemas de Gestão (Python & POO)</h4>
+                    <p class="sub-details">Projeto de estudo | Sarandi, RS | 2024</p>
+                    <ul>
+                        <li>Desenvolvimento do <code>MarketSystemPOO</code>, um sistema de console para cadastro e gerenciamento de pessoas, produtos, preços e estoque.</li>
+                        <li>Aplicação de princípios de Programação Orientada a Objetos para modelar as entidades do sistema.</li>
+                        <li>Implementação de lógica de negócio para controle de inventário e precificação.</li>
+                        <li>Prática em web scraping com <code>BeautifulSoup</code> para coleta de dados públicos.</li>
+                    </ul>
+                </div>
 
+                <div class="experience-item">
+                    <h4>Aplicações Desktop (Java & POO)</h4>
+                    <p class="sub-details">Projeto de estudo | Sarandi, RS | 2024</p>
+                    <ul>
+                        <li>Criação do <code>SystemLibraryPooJAVA</code>, um sistema para gerenciamento de bibliotecas, aplicando conceitos de POO para organizar a estrutura do código.</li>
+                        <li>Desenvolvimento do <code>Java-IMC-Calculator</code>, uma aplicação com interface gráfica (GUI) para cálculo de IMC, utilizando a biblioteca Swing.</li>
+                        <li>Implementação de lógica para entrada, processamento e exibição de dados ao usuário.</li>
+                    </ul>
+                </div>
 
-
-
+                <div class="experience-item">
+                    <h4>Desenvolvimento Web (HTML & CSS)</h4>
+                    <p class="sub-details">Projetos pessoais não remunerados | Sarandi, RS | 2024</p>
+                    <ul>
+                        <li>Desenvolvimento do projeto <code>GardenFight</code>, aplicando conceitos de estruturação de conteúdo com HTML.</li>
+                        <li>Criação deste portfólio (<code>WebsitePortfolio</code>) como um projeto prático para demonstrar habilidades em HTML, CSS e JavaScript dinâmico.</li>
+                        <li>Foco em design responsivo e criação de interfaces interativas e modernas.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h2>Formação Acadêmica</h2>
+                <div class="experience-item">
+                    <h4>Ciência da Computação</h4>
+                    <p class="sub-details">Atitus Educação Campus Santa Teresinha | 2025 - 2028 (Cursando)</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h2>Cursos Extracurriculares</h2>
+                <div class="experience-item">
+                    <h4>Inglês Pós-intermediário</h4>
+                    <p class="sub-details">Wizard by Pearson | 2019 - 2024 (Concluído)</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Curso de Desenvolvimento Web</h4>
+                    <p class="sub-details">Programador Br | Duração: 500 horas | Concluído em 2024</p>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <script src="script.js"></script>
 
-</body>
+    <div id="image-modal" class="modal-overlay">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" src="pictures/foto.jpg" alt="Foto de Vinícius Noetzold em tamanho expandido">
+    </div>
 
+</body>
 </html>
